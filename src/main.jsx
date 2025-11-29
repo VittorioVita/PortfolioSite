@@ -1,15 +1,15 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import ReactDOM from 'react-dom/client' // <--- QUESTO MANCAVA!
 import App from './App.jsx'
 import './index.css'
-import { BrowserRouter } from 'react-router-dom'
-import ScrollToTop from './components/ScrollToTop' // <--- IMPORTALO QUI
+import { HashRouter } from 'react-router-dom' // Usiamo solo HashRouter per GitHub Pages
+import ScrollToTop from './components/ScrollToTop'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ScrollToTop /> {/* <--- AGGIUNGILO QUI, PRIMA DI APP */}
+    <HashRouter>
+      <ScrollToTop />
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
 )

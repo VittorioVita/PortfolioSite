@@ -85,7 +85,7 @@ const ProjectDetail = () => {
           </section>
         </div>
 
-        {/* Colonna Destra: Tech Stack & Info */}
+        {/* Colonna Destra */}
         <div className="space-y-8">
           <div className="bg-arcade-dark p-8 border-4 border-white pixel-border sticky top-24">
             <h3 className="font-pixel text-xl mb-6 text-center border-b-4 border-gray-700 pb-4">TECH STACK</h3>

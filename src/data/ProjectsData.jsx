@@ -1,7 +1,8 @@
 import { FaShoppingCart, FaUsers, FaMusic, FaHeartbeat, FaGamepad, FaRobot } from 'react-icons/fa';
 import wikiDrink from "../assets/wikiDrink.png";
 import toDoList from "../assets/toDoList.png";
-import foodDel from "../assets/anteprima foodDEl.png"
+import foodDel from "../assets/anteprima foodDEl.png";
+import vape from "../assets/vape.png";
 // Metti i progetti dal PIÙ RECENTE al MENO RECENTE
 // La logica prenderà automaticamente i primi 4 di questa lista
 export const projectsData = [
@@ -49,152 +50,18 @@ export const projectsData = [
   },
   {
     id: 4,
-    title: "PIXEL FITNESS",
-    desc: "Gamified fitness tracker with achievement system.",
-    tech: ["REACT NATIVE", "CHARTS", "REDUX"],
-    img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/f8a3d2c1be-8f4e9a5b6c7d8e9f0a1b.png",
+    title: "V-CLOUD",
+    desc: "Gestione di un ecommerce lato frontend.",
+    tech: ["REACT", "CHARTS", "HOOKS", "Tailwind CSS (Design atomico e responsive).","GitHub Pages (CI/CD automatizzata)."],
+    challenge:"Creare un'esperienza d'acquisto fluida (SPA) per un catalogo hardware e liquidi complesso.",
+    solution:"Dynamic & Nested Routing con React Router per percorsi SEO-friendly e navigazione gerarchica logica.Context API + useReducer per una gestione centralizzata dello stato e LocalStorage per evitare la perdita dei dati al refresh.Master Product Page (componente dinamico unico) e Asset Optimization tramite Vite per caricamenti istantanei.Implementazione di un sistema di Scroll Management per resettare la vista ad ogni cambio rotta.",
+
+    img: vape,
     color: "neon-orange",
     icon: <FaHeartbeat />,
-    linkLive: "#",
-    linkCode: "#"
-  },
-  // QUESTO È IL QUINTO PROGETTO (Non si vedrà nella Home, ma è pronto nel database)
-  {
-    id: 5,
-    title: "OLD PROJECT",
-    desc: "My very first website.",
-    tech: ["HTML", "CSS"],
-    img: "https://via.placeholder.com/400", // Immagine di prova
-    color: "neon-purple",
-    icon: <FaGamepad />,
-    linkLive: "#",
-    linkCode: "#"
+   linkLive: "https://vittoriovita.github.io/vape/",
+    linkCode: "https://github.com/VittorioVita/vape"
   },
 
-  
-  {
-    id: 6,
-    title: "NEON SHOP",
-    desc: "A fully responsive e-commerce platform with real-time inventory.",
-    // Campi per il dettaglio
-    fullDesc: "Neon Shop è un'esperienza di e-commerce moderna che fonde estetica cyberpunk con funzionalità enterprise. L'obiettivo era creare un negozio veloce, accessibile e visivamente impattante.",
-    challenge: "Gestire lo stato globale del carrello e l'inventario in tempo reale senza degradare le performance su dispositivi mobili.",
-    solution: "Ho utilizzato Redux Toolkit per la gestione dello stato e ottimizzato i re-render con React.memo. L'integrazione con Stripe è gestita lato server per la massima sicurezza.",
-    features: ["Pagamenti Stripe", "Dashboard Admin", "Dark Mode", "Filtri Avanzati"],
-    tech: ["REACT", "STRIPE", "MONGODB"],
-    img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/7ee9abeeec-d1d69812b949b6446fe3.png",
-    color: "neon-cyan",
-    icon: <FaShoppingCart />,
-    linkLive: "#",
-    linkCode: "#"
-  },
-  // ... Aggiungi gli stessi campi extra (fullDesc, challenge, solution) agli altri progetti
-  // Per testare la paginazione, immagina di averne più di 10 qui.
-  {
-      id: 7,
-      title: "SOCIAL HUB",
-      desc: "Social media platform with real-time messaging.",
-      fullDesc: "Una piattaforma sociale decentralizzata...",
-      challenge: "Scalabilità dei websocket.",
-      solution: "Implementazione di Socket.io con Redis adapter.",
-      features: ["Chat Live", "Feed personalizzato", "Notifiche"],
-      tech: ["REACT", "SOCKET.IO", "NODE"],
-      img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/3875c6d763-4c7beea937424b125ecb.png",
-      color: "neon-pink",
-      icon: <FaUsers />,
-      linkLive: "#",
-      linkCode: "#"
-    },
-    
-    {id: 8,
-    title: "OLD PROJECT",
-    desc: "My very first website.",
-    tech: ["HTML", "CSS"],
-    img: "https://via.placeholder.com/400", // Immagine di prova
-    color: "neon-purple",
-    icon: <FaGamepad />,
-    linkLive: "#",
-    linkCode: "#"
-  },
 
-  
-  {
-    id: 9,
-    title: "NEON SHOP",
-    desc: "A fully responsive e-commerce platform with real-time inventory.",
-    // Campi per il dettaglio
-    fullDesc: "Neon Shop è un'esperienza di e-commerce moderna che fonde estetica cyberpunk con funzionalità enterprise. L'obiettivo era creare un negozio veloce, accessibile e visivamente impattante.",
-    challenge: "Gestire lo stato globale del carrello e l'inventario in tempo reale senza degradare le performance su dispositivi mobili.",
-    solution: "Ho utilizzato Redux Toolkit per la gestione dello stato e ottimizzato i re-render con React.memo. L'integrazione con Stripe è gestita lato server per la massima sicurezza.",
-    features: ["Pagamenti Stripe", "Dashboard Admin", "Dark Mode", "Filtri Avanzati"],
-    tech: ["REACT", "STRIPE", "MONGODB"],
-    img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/7ee9abeeec-d1d69812b949b6446fe3.png",
-    color: "neon-cyan",
-    icon: <FaShoppingCart />,
-    linkLive: "#",
-    linkCode: "#"
-  },
-  // ... Aggiungi gli stessi campi extra (fullDesc, challenge, solution) agli altri progetti
-  // Per testare la paginazione, immagina di averne più di 10 qui.
-  {
-      id: 10,
-      title: "SOCIAL HUB",
-      desc: "Social media platform with real-time messaging.",
-      fullDesc: "Una piattaforma sociale decentralizzata...",
-      challenge: "Scalabilità dei websocket.",
-      solution: "Implementazione di Socket.io con Redis adapter.",
-      features: ["Chat Live", "Feed personalizzato", "Notifiche"],
-      tech: ["REACT", "SOCKET.IO", "NODE"],
-      img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/3875c6d763-4c7beea937424b125ecb.png",
-      color: "neon-pink",
-      icon: <FaUsers />,
-      linkLive: "#",
-      linkCode: "#"
-    },
-        {id: 11,
-    title: "OLD PROJECT",
-    desc: "My very first website.",
-    tech: ["HTML", "CSS"],
-    img: "https://via.placeholder.com/400", // Immagine di prova
-    color: "neon-purple",
-    icon: <FaGamepad />,
-    linkLive: "#",
-    linkCode: "#"
-  },
-
-  
-  {
-    id: 12,
-    title: "NEON SHOP",
-    desc: "A fully responsive e-commerce platform with real-time inventory.",
-    // Campi per il dettaglio
-    fullDesc: "Neon Shop è un'esperienza di e-commerce moderna che fonde estetica cyberpunk con funzionalità enterprise. L'obiettivo era creare un negozio veloce, accessibile e visivamente impattante.",
-    challenge: "Gestire lo stato globale del carrello e l'inventario in tempo reale senza degradare le performance su dispositivi mobili.",
-    solution: "Ho utilizzato Redux Toolkit per la gestione dello stato e ottimizzato i re-render con React.memo. L'integrazione con Stripe è gestita lato server per la massima sicurezza.",
-    features: ["Pagamenti Stripe", "Dashboard Admin", "Dark Mode", "Filtri Avanzati"],
-    tech: ["REACT", "STRIPE", "MONGODB"],
-    img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/7ee9abeeec-d1d69812b949b6446fe3.png",
-    color: "neon-cyan",
-    icon: <FaShoppingCart />,
-    linkLive: "#",
-    linkCode: "#"
-  },
-  // ... Aggiungi gli stessi campi extra (fullDesc, challenge, solution) agli altri progetti
-  // Per testare la paginazione, immagina di averne più di 10 qui.
-  {
-      id: 13,
-      title: "SOCIAL HUB",
-      desc: "Social media platform with real-time messaging.",
-      fullDesc: "Una piattaforma sociale decentralizzata...",
-      challenge: "Scalabilità dei websocket.",
-      solution: "Implementazione di Socket.io con Redis adapter.",
-      features: ["Chat Live", "Feed personalizzato", "Notifiche"],
-      tech: ["REACT", "SOCKET.IO", "NODE"],
-      img: "https://storage.googleapis.com/uxpilot-auth.appspot.com/3875c6d763-4c7beea937424b125ecb.png",
-      color: "neon-pink",
-      icon: <FaUsers />,
-      linkLive: "#",
-      linkCode: "#"
-    },
-    // ... altri progetti ...
 ];

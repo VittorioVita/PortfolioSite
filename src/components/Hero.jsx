@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-neon-purple/20 via-arcade-bg to-neon-cyan/20"></div>
       
-      {/* Background Floating Icons - Pointer events none per non bloccare i click */}
+      {/* Background*/}
       <div className="absolute inset-0 opacity-10 pointer-events-none select-none">
         <div className="absolute top-20 left-10 text-6xl text-neon-pink float-animation"><FaGamepad /></div>
         <div className="absolute top-40 right-20 text-5xl text-neon-cyan float-animation" style={{animationDelay: '1s'}}><FaCode /></div>
@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="absolute bottom-20 right-40 text-6xl text-neon-orange float-animation" style={{animationDelay: '1.5s'}}><FaTrophy /></div>
       </div>
       
-      {/* Main Content Container */}
+      {/* Main Container */}
       <div className="container mx-auto px-6 relative z-10 text-center flex flex-col items-center flex-grow justify-center">
         
         <div className="float-animation mb-8">
@@ -25,7 +25,7 @@ const Hero = () => {
           </div>
         </div>
         
-        {/* Responsive Text Sizes */}
+        {/* Text */}
         <h1 className="font-pixel text-3xl sm:text-5xl md:text-7xl mb-6 text-neon-cyan neon-text leading-tight break-words max-w-full">
           VITTORIO <br />CAPORALE VITA
         </h1>
@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
       </div>
       
-      {/* Arrow Down - Ora è parte del flusso finale, non assoluta */}
+      {/* Arrow Down  */}
       <div className="mt-auto animate-bounce pb-4">
         <FaChevronDown className="text-4xl text-neon-yellow" />
       </div>

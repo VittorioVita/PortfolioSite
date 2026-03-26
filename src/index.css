@@ -15,14 +15,14 @@ body {
   background: linear-gradient(transparent 50%, rgba(0, 255, 255, 0.05) 50%);
   background-size: 100% 4px;
 }
-/* Custom Base Styles */
+
 body {
   @apply bg-arcade-bg text-white font-retro;
   background: linear-gradient(transparent 50%, rgba(0, 255, 255, 0.05) 50%);
   background-size: 100% 4px;
 }
 
-/* Animations defined as utility classes or standard css */
+/* Animations  */
 @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
 @keyframes pulse-neon { 0%, 100% { filter: drop-shadow(0 0 5px currentColor); } 50% { filter: drop-shadow(0 0 20px currentColor); } }
 

@@ -5,7 +5,7 @@ import { SiMongodb } from 'react-icons/si';
 
 const SkillChart = ({ data, color }) => {
   return (
-    <div className="w-full h-[250px] cursor-grab active:cursor-grabbing"> {/* Cursore che invita a "prendere" */}
+    <div className="w-full h-[250px] cursor-grab active:cursor-grabbing"> 
       <Plot
         data={[{
           type: 'scatterpolar',
@@ -18,7 +18,7 @@ const SkillChart = ({ data, color }) => {
         }]}
         layout={{
           autosize: true,
-          dragmode: 'pan', // <--- ECCO IL FIX: Deve essere 'pan' per permettere il movimento
+          dragmode: 'pan', 
           margin: { t: 20, r: 25, b: 20, l: 25 },
           polar: { 
             radialaxis: { 
@@ -26,13 +26,13 @@ const SkillChart = ({ data, color }) => {
               range: [0, 100], 
               color: '#FF10F0', 
               tickfont: { size: 8 },
-              fixedrange: true // Blocca lo zoom avanti/indietro (il grafico non si rimpicciolisce)
+              fixedrange: true 
             }, 
             bgcolor: 'rgba(0,0,0,0)',
             angularaxis: { 
               tickfont: { size: 10, color: color },
-              fixedrange: false, // SBLOCCATO: Permette la rotazione
-              period: 5 // Aiuta a rendere la rotazione più fluida sui pentagoni
+              fixedrange: false, 
+              period: 5 
             } 
           },
           showlegend: false,
@@ -45,7 +45,7 @@ const SkillChart = ({ data, color }) => {
         config={{ 
           responsive: true, 
           displayModeBar: false, 
-          scrollZoom: false, // Blocca lo zoom con la rotellina
+          scrollZoom: false,
           staticPlot: false,
           editable: false
         }}
@@ -59,9 +59,9 @@ const Skills = () => {
     <section id="skills" className="py-24 bg-gradient-to-b from-arcade-bg to-arcade-dark relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="font-pixel text-xl sm:text-3xl md:text-5xl text-neon-cyan neon-text mb-4">
-            &gt; SKILL_TREE.json
-          </h2>
+<h2 className="font-pixel text-xl sm:text-2xl md:text-3xl lg:text-5xl text-neon-cyan neon-text mb-4 tracking-tighter sm:tracking-normal">
+  &gt; SKILL_TREE.json
+</h2>
           <div className="w-32 h-1 bg-neon-pink mx-auto"></div>
         </div>
         
@@ -76,7 +76,7 @@ const Skills = () => {
               <SkillChart 
                 color="#00FFFF"
                 data={{
-                  values: [95, 90, 85, 92, 88],
+                  values: [90, 90, 85, 75, 40],
                   labels: ['Hooks', 'Components', 'State', 'Perf', 'Test']
                 }} 
               />
@@ -93,7 +93,7 @@ const Skills = () => {
               <SkillChart 
                 color="#FFFF00"
                 data={{
-                  values: [90, 88, 92, 85, 87],
+                  values: [80, 88, 70, 70, 50],
                   labels: ['ES6+', 'Async', 'DOM', 'APIs', 'Fmk']
                 }} 
               />
@@ -110,7 +110,7 @@ const Skills = () => {
               <SkillChart 
                 color="#FF10F0"
                 data={{
-                  values: [88, 90, 85, 92, 87],
+                  values: [88, 90, 60, 90, 87],
                   labels: ['Figma', 'Anim', 'Resp', 'A11y', 'Proto']
                 }} 
               />
@@ -118,12 +118,12 @@ const Skills = () => {
           </div>
         </div>
 
-        {/* Other Skills Grid */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+        {/* Skills  */}
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
              {[
-                { icon: <FaNode className="text-neon-purple"/>, name: "NODE.JS", border: "border-neon-purple" },
+                
                 { icon: <FaGitAlt className="text-neon-cyan"/>, name: "GIT", border: "border-neon-cyan" },
-                { icon: <SiMongodb className="text-neon-yellow"/>, name: "MONGODB", border: "border-neon-yellow" },
+              
                 { icon: <FaFigma className="text-neon-pink"/>, name: "FIGMA", border: "border-neon-pink" }
              ].map((skill, idx) => (
                 <div key={idx} className={`bg-arcade-bg border-4 ${skill.border} p-6 text-center hover:bg-arcade-dark transition-all duration-300 hover:scale-110`}>

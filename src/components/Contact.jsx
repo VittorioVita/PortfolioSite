@@ -10,7 +10,7 @@ const Contact = () => {
     <section id="contact" className="py-24 bg-arcade-dark relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-<h2 className="font-pixel text-xl sm:text-3xl md:text-5xl text-neon-cyan neon-text mb-4">
+<h2 className="font-pixel text-xl sm:text-2xl md:text-3xl lg:text-5xl text-neon-cyan neon-text mb-4 tracking-tighter sm:tracking-normal">
   &gt; CONTACT_FORM.tsx
 </h2>
           <div className="w-32 h-1 bg-neon-pink mx-auto"></div>
